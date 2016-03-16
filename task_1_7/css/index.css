@@ -85,9 +85,10 @@ body {
 	color:#787b83;
 }
 
-.navbar-nav ul a li {
+/* .navbar-nav ul a {
 	text-decoration:none;
-}
+	color:#787b83;
+} */
 
 .li-selected {
 	color:#e74f4d;
@@ -106,6 +107,8 @@ body {
 	height:56px;
 	float:left;
 	text-align:center;
+	text-decoration:none;
+	color:#787b83;
 }
 
 .navbar-login {
