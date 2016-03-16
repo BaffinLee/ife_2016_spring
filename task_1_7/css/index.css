@@ -9,12 +9,28 @@ html, body, ul, ol, li, p, h1, h2, h3, h4, h5 {
 	padding:0;
 }
 
+body {
+	min-width:1280px;
+}
+
+.clearfix {
+	*zoom:1;
+}
+
+.clearfix:before,.clearfix:after {
+	display:table;
+	content:"";
+}
+
+.clearfix:after {
+	clear:both;
+}
+
 .navbar {
 	top:0;
 	left:0;
 	height:56px;
 	width:100%;
-	min-width:1280px;
 	
 }
 
@@ -69,7 +85,7 @@ html, body, ul, ol, li, p, h1, h2, h3, h4, h5 {
 	color:#787b83;
 }
 
-.navbar-nav ul a {
+.navbar-nav ul a li {
 	text-decoration:none;
 }
 
@@ -77,12 +93,11 @@ html, body, ul, ol, li, p, h1, h2, h3, h4, h5 {
 	color:#e74f4d;
 }
 
-.li-selected-underline {
+.li-selected-underline, .navbar-nav li:hover .li-select-underline {
 	position:absolute;
 	top:51px;
-	width:60px;
+	width:90px;
 	height:5px;
-	margin-left:15px;
 	background-color:#e74f4d;
 }
 
@@ -115,7 +130,6 @@ html, body, ul, ol, li, p, h1, h2, h3, h4, h5 {
 .mainfoucs-pic {
 	background:url(../images/main.png) no-repeat;
 	height:854px;
-	min-width:1280px;
 	background-size:cover;
 	font-family:"Microsoft YaHei", STHeiti, sans-serif;
 }
@@ -123,7 +137,6 @@ html, body, ul, ol, li, p, h1, h2, h3, h4, h5 {
 .mainfoucs-mask {
 	width:100%;
 	height:854px;
-	min-width:1280px;
 	position:absolute;
 	background-color:#020c1d;
 	opacity:0.3;
@@ -162,4 +175,54 @@ html, body, ul, ol, li, p, h1, h2, h3, h4, h5 {
 	font-size:30px;
 	line-height:65px;
 	font-weight:lighter;
+	text-decoration:none;
+}
+
+.featuretags {
+	width:1280px;
+	height:250px;
+	margin:0 auto;
+}
+
+.featuretags-list {
+	width:100%;
+	height:100%;
+}
+
+.featuretags-item {
+	width:320px;
+	height:100%;
+	float:left;
+	list-style-type:none;
+	text-align:center;
+	font:14px/20px SimHei, STHeiti, sans-serif;
+}
+
+.featuretags-item img {
+	margin:45px 139px;
+	width:42px;
+	height:42px;
+}
+
+.featuretags-separator {
+	position:relative;
+	width:2px;
+	height:52px;
+	top:-35px;
+	left:320px;
+	background-color:#767777;
+}
+
+.explore {
+	width:100%;
+	height:360px;
+	background-color:#ededec;
+	text-align:center;
+	font:54px SimHei, STHeiti, sans-serif;
+	color:#867e7a;
+	font-weight:lighter;
+}
+
+.explore img {
+	margin:90px auto 45px auto;
 }
