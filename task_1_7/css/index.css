@@ -4,20 +4,23 @@
  * 2016.03.16
  */
 
-html, body, ul, ol, li, p, h1, h2, h3, h4, h5 {
+html, body, ul, ol, li, p, h1, h2, h3, h4, h5, pre {
 	margin:0;
 	padding:0;
 }
 
 body {
 	min-width:1280px;
+	max-width:1440px;
+	font-family:"Microsoft YaHei", SimHei, STHeiti, sans-serif;
 }
 
 .clearfix {
 	*zoom:1;
 }
 
-.clearfix:before,.clearfix:after {
+.clearfix:before,
+.clearfix:after {
 	display:table;
 	content:"";
 }
@@ -89,7 +92,8 @@ body {
 	color:#e74f4d;
 }
 
-.li-selected-underline, .navbar-nav li:hover .li-select-underline {
+.li-selected-underline,
+.navbar-nav li:hover .li-select-underline {
 	position:absolute;
 	top:51px;
 	width:90px;
@@ -176,6 +180,10 @@ body {
 	text-decoration:none;
 }
 
+.mainfocus-btn:hover {
+	background-color:#d8625b;
+}
+
 .featuretags {
 	width:1280px;
 	height:250px;
@@ -216,6 +224,9 @@ body {
 	height:360px;
 	background-color:#ededec;
 	text-align:center;
+}
+
+.explore h1 {
 	font:54px SimHei, STHeiti, sans-serif;
 	color:#867e7a;
 	font-weight:lighter;
@@ -223,4 +234,131 @@ body {
 
 .explore img {
 	margin:90px auto 45px auto;
+}
+
+.explore-map {
+	width:100%;
+	height:340px;
+	padding-top:50px;
+	background:url(../images/map.png) no-repeat;
+	background-size:cover;
+	text-align:center;
+	color:white;
+	font-family:"Microsoft YaHei", STHeiti, sans-serif;
+}
+
+.map-mask {
+	position:absolute;
+	top:1520px;
+	width:100%;
+	height:390px;
+	opacity:0.2;
+	filter:alpha(opacity=20);
+	background-color:#aa3433;
+	z-index:0;
+}
+
+.explore-map-text {
+	position:relative;
+}
+
+.explore-map-text h3 {
+	font-size:21px;
+	margin:0 auto 30px auto;
+	font-weight:normal;
+}
+
+.text-separator {
+	width:30px;
+	height:2px;
+	background-color:white;
+	position:relative;
+	top:-14px;
+	margin:0 auto;
+}
+
+.explore-map-address {
+	position:relative;
+	margin-top:55px;
+}
+
+.explore-map-address input {
+	width:235px;
+	height:35px;
+	border:none;
+	margin-right:32px;
+	font-size:16px;
+	padding:0 10px;
+	font:12px "Microsoft YaHei", STHeiti, sans-serif;
+	background:white url('../images/select-bg.png') no-repeat 95% 50%;
+}
+
+.explore-map-address button {
+	width:235px;
+	height:35px;
+	border:none;
+	text-align:center;
+	background-color:#be4e48;
+}
+
+.explore-map-address button pre {
+	font:14px "Microsoft YaHei", STHeiti, sans-serif;
+	color:white;
+}
+
+.explore-map-address button:hover {
+	background-color:#e7736d;
+}
+
+.explore-activity {
+	width:100%;
+	height:600px;
+	background-color:#f7f7f7;
+}
+
+.explore-activity ul {
+	width:1020px;
+	height:390px;
+	padding:105px 130px;
+	margin:0 auto;
+	list-style:none;
+}
+
+.explore-activity ul li {
+	width:201px;
+	height:374px;
+	padding:8px 27px;
+	border:none;
+	float:left;
+	display:inline-block;
+}
+
+.explore-activity ul li img {
+	width:201px;
+	height:314px;
+	border:1px solid #dadada;
+}
+
+.act-text-style-1 {
+	text-align:center;
+}
+
+.act-text-style-1 h2 {
+	font:15px "Microsoft YaHei", STHeiti, sans-serif;
+}
+
+.act-text-style-1 span {
+	font:12px "Microsoft YaHei", STHeiti, sans-serif;
+}
+
+.act-text-style-2 {
+	text-align:center;
+}
+
+.act-text-style-2 h2 pre {
+	font:22px "Microsoft YaHei", STHeiti, sans-serif;
+}
+
+.act-text-style-2 span {
+	font:12px "Microsoft YaHei", STHeiti, sans-serif;
 }
