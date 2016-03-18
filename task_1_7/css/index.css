@@ -1,4 +1,4 @@
-html, body, ul, ol, li, p, h1, h2, h3, h4, h5, pre {
+html, body, ul, ol, li, p, h1, h2, h3, h4, h5, pre, button {
 	margin:0;
 	padding:0;
 }
@@ -256,6 +256,10 @@ body {
 	position:relative;
 }
 
+.explore-map-text:hover .text-separator {
+	width:200px;
+}
+
 .explore-map-text h3 {
 	font-size:21px;
 	margin:0 auto 30px auto;
@@ -269,6 +273,10 @@ body {
 	position:relative;
 	top:-14px;
 	margin:0 auto;
+	transition:width 1s;
+	-moz-transition:width 1s;
+	-webkit-transition:width 1s;
+	-o-transition:width 1s;
 }
 
 .explore-map-address {
@@ -439,3 +447,119 @@ body {
 .unactived-li {
 	background:url('../images/radius_dashed.png')  no-repeat center;
 }
+
+.team-life-left,
+.team-life-right,
+.team-life-center {
+	width:33.33%;
+	height:520px;
+	display:inline-block;
+	float:left;
+	font-family:SimHei, STHeiTi, sans-serif;
+}
+
+.team-life-left {
+	background-color:#e74f4d;
+	text-align:center;
+}
+
+.team-life-left h2 {
+	color:white;
+	font-size:21px;
+	line-height:32px;
+	font-weight:lighter;
+	margin-top:190px;
+}
+
+.team-life-left div {
+	width:30px;
+	height:2px;
+	margin:20px auto;
+	background-color:white;
+	transition:width 1s;
+	-moz-transition:width 1s;
+	-webkit-transition:width 1s;
+	-o-transition:width 1s;
+}
+
+.team-life-left button {
+	width:150px;
+	height:35px;
+	margin:0 auto;
+	color:white;
+	background-color:#e74f4d;
+	border:1px solid white;
+	font:16px SimHei, STHeiTi, sans-serif;
+}
+
+.team-life-left button:hover {
+	color:#e74f4d;
+	background-color:white;
+}
+
+.team-life-center {
+	background-color:white;
+	text-align:center;
+}
+
+.team-life-center h2 {
+	color:black;
+	font-size:21px;
+	line-height:32px;
+	font-weight:lighter;
+	margin-top:190px;
+}
+
+.team-life-center div {
+	width:30px;
+	height:2px;
+	margin:20px auto;
+	background-color:black;
+	transition:width 1s;
+	-moz-transition:width 1s;
+	-webkit-transition:width 1s;
+	-o-transition:width 1s;
+}
+
+.team-life-center button {
+	width:150px;
+	height:35px;
+	margin:0 auto;
+	color:#e74f4d;
+	background-color:white;
+	border:1px solid #e74f4d;
+	font:16px SimHei, STHeiTi, sans-serif;
+}
+
+.team-life-center button:hover {
+	color:white;
+	background-color:#e74f4d;
+}
+
+.team-life-right img {
+	width:100%;
+	height:100%;
+}
+
+.right-arrow {
+	width:33.33%;
+	height:520px;
+	position:absolute;
+	background:url('../images/right_arrow.png') no-repeat center left;
+}
+
+.team-life-right-mask {
+	width:33.33%;
+	height:520px;
+	position:absolute;
+	background-color:black;
+	opacity:0.2;
+	filter:alpha(opacity=20);
+}
+
+
+.team-life-left:hover div,
+.team-life-center:hover div {
+	width:150px;
+}
+
