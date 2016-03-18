@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>新世界官网</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -58,7 +59,7 @@
 			<div class="navbar-login clearfix">
 				<a href="#" title="登陆">
 					<img src="images/login.png" alt="登陆">
-					<div class="navbar-login-text">登陆</div>
+					<span class="navbar-login-text">登陆</span>
 				</a>
 			</div>
 		</div>
@@ -109,14 +110,34 @@
 			<div class="text-separator"></div>
 			<span>每个城市的有不同的活动信息，请自主查询您所需要了解的城市</span>
 		</div>
-		<div class="explore-map-address">
-			<input type="text" name="country" placeholder="中国">
-			<input type="text" name="province" placeholder="省份">
-			<input type="text" name="city" placeholder="城市">
+		<form class="explore-map-address" action="#">
+			<input type="text" name="country" placeholder="中国" class="country-input">
+			<ul class="country-ul">
+				<li>中国</li>
+				<li>美国</li>
+				<li>英国</li>
+			</ul>
+			<input type="text" name="province" placeholder="省份" class="province-input">
+			<ul class="province-ul">
+				<li>北京市</li>
+				<li>天津市</li>
+				<li>河北省</li>
+				<li>陕西省</li>
+				<li>内蒙古自治区</li>
+				<li>辽宁省</li>
+			</ul>
+			<input type="text" name="city" placeholder="城市" class="city-input">
+			<ul class="city-ul">
+				<li>广州</li>
+				<li>北京</li>
+				<li>深圳</li>
+				<li>武汉</li>
+				<li>上海</li>
+			</ul>
 			<button type="submit">
 				<pre>搜      索</pre>
 			</button>
-		</div>
+		</form>
 	</div>
 	<div class="explore-activity clearfix">
 		<ul>
@@ -182,6 +203,75 @@
 			<div class="team-life-right-mask"></div>
 			<div class="right-arrow"></div>
 			<img src="images/life.png" alt="team">
+		</div>
+	</div>
+	<div class="volunteer clearfix">
+		<div class="top">
+			<h1>成为我们的志愿者</h1>
+			<p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想<br/>有激情那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+		</div>
+		<div class="left">
+			<h2>新世界志愿者协议</h2>
+			<p>加入新世界志愿者的人员必须遵守中华人民共共和国的相关法律法规，并且本着平等资源的原则 ......</p>
+			<a href="#">
+				<img src="images/arrow.png" alt="more">
+				<span>more</span>
+			</a><br/>
+			<h2>新世界志愿者协议</h2>
+			<p>加入新世界志愿者的人员必须遵守中华人民共共和国的相关法律法规，并且本着平等资源的原则 ......</p>
+			<a href="#">
+				<img src="images/arrow.png" alt="more">
+				<span>more</span>
+			</a><br/>
+			<h2>新世界志愿者协议</h2>
+			<a href="#">
+				<img src="images/arrow.png" alt="more">
+				<span>more</span>
+			</a>
+		</div>
+		<form action="#">
+			<input class="name" placeholder="姓名：" name="name">
+			<input class="age" placeholder="年纪：" name="age">
+			<input class="sex" placeholder="性别：" name="sex">
+			<input class="addr" placeholder="地址：" name="addr">
+			<textarea name="text" placeholder="请简单描述您梦想的生活："></textarea>
+			<button type="submit">提交申请</button>
+		</form>
+	</div>
+	<div class="footer">
+		<div class="contact">
+			<h1>联系我们</h1>
+			<p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯<br/>也可以通过以下任何方式关注我们动态</p>
+			<form action="#" class="clearfix">
+				<input type="text" placeholder="someone@email.com" class="input-email">
+				<input type="submit" class="input-submit" value="提 交">
+			</form>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/qq.png" alt="QQ">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/weibo.png" alt="weibo">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/twitter.png" alt="twitter">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/net.png" alt="net">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<p class="copyright-left">&copy;2016新世界</p>
+			<span class="back-to-top">Back to top</span>
 		</div>
 	</div>
 </body>

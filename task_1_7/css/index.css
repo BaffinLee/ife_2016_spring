@@ -1,4 +1,10 @@
-html, body, ul, ol, li, p, h1, h2, h3, h4, h5, pre, button {
+/**
+ * Todo
+ * 减少冗余代码
+ * 兼容性测试
+ */
+
+html, body, ul, ol, li, p, h1, h2, h3, pre, button, input {
 	margin:0;
 	padding:0;
 }
@@ -280,20 +286,76 @@ body {
 }
 
 .explore-map-address {
+	width:1280px;
+	margin:55px auto 0 auto;
 	position:relative;
-	margin-top:55px;
 }
 
 .explore-map-address input {
 	width:235px;
 	height:35px;
-	border:none;
+	border:solid white;
+	border-width:1px 1px 0 1px;
 	margin-right:32px;
 	font-size:16px;
 	padding:0 10px;
 	font:12px "Microsoft YaHei", STHeiti, sans-serif;
 	background:white url('../images/select-bg.png') no-repeat 95% 50%;
 }
+
+.explore-map-address input:hover {
+	border:solid #be4e48;
+	border-width:1px 1px 0 1px;
+}
+
+.explore-map-address ul {
+	display:none;
+	position:absolute;
+	width:255px;
+	overflow:hidden;
+	background-color:#e3e3e4;
+	border:solid #be4e48;
+	border-width:0 1px 1px 1px;
+}
+
+.country-ul {
+	left:81px;
+}
+
+.province-ul {
+	left:375px;
+}
+
+.city-ul {
+	left:669px;
+}
+
+.explore-map-address ul li {
+	width:225px;
+	padding-left:30px;
+	list-style-type:none;
+	height:27px;
+	text-align:left;
+	font-size:12px;
+	line-height:27px;
+	color:black;
+}
+.explore-map-address ul li:hover {
+	background:url('../images/ok.png') no-repeat 8px center;
+	background-color:#be4e48;
+	color:white;
+}
+
+.country-input:hover + .country-ul,
+.province-input:hover + .province-ul,
+.city-input:hover + .city-ul,
+.country-input:focus + .country-ul,
+.province-input:focus + .province-ul,
+.city-input:focus + .city-ul
+ {
+	display:block;
+}
+
 
 .explore-map-address button {
 	width:235px;
@@ -563,3 +625,174 @@ body {
 	width:150px;
 }
 
+.volunteer div {
+	display:inline-block;
+	float:left;
+}
+
+.volunteer {
+	width:1000px;
+	height:470px;
+	margin:120px auto 165px auto;
+}
+
+.volunteer .top {
+	width:100%;
+	text-align:center;
+	height:180px;
+}
+
+.top h1 {
+	font:22px SimHei, STHeiti, sans-serif;
+	margin:0 auto 20px auto;
+}
+
+.top p {
+	font-size:14px;
+}
+
+.volunteer .left {
+	width:29.33%;
+	height:290px;
+	padding:0 2%;
+	color:#929292;
+}
+
+.left h2 {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+
+.left p {
+	font:12px/20px SimSun, STSong, serif;
+}
+
+.left a {
+	float:right;
+	text-decoration:none;
+	color:black;
+	margin-bottom:10px;
+}
+
+.volunteer form input {
+	width:23.33%;
+	height:35px;
+	border:0;
+	margin:0 2% 10px 2%;
+	padding:0 2%;
+	font:14px "Microsoft YaHei", STHeiti, sans-serif;
+}
+
+.volunteer form textarea {
+	width:58.66%;
+	height:120px;
+	padding:0 2%;
+	margin:10px 2%;
+	border:0;
+	font:14px "Microsoft YaHei", STHeiti, sans-serif;
+	overflow:hidden;
+}
+
+.volunteer form input:hover,
+.volunteer form textarea:hover {
+	background-color:#ededee;
+}
+
+.volunteer form button {
+	width:62.66%;
+	height:40px;
+	text-align:center;
+	border:0;
+	margin:0 2%;
+	background-color:white;
+	font:15px SimHei, STHeiti, sans-serif;
+}
+
+.volunteer form button:hover {
+	background-color:#e74f4d;
+	color:white;
+}
+
+.footer {
+	width:100%;
+	height:415px;
+	text-align:center;
+	background-color:#2f3038;
+}
+
+.contact {
+	height:360px;
+	background-color:#32353e;
+	color:#e0dcdd;
+}
+
+.contact h1 {
+	font:21px SimHei, STHeiti, sans-serif;
+	padding-top:90px;
+}
+
+.contact p {
+	font:14px/20px SimSun, STSong, serif;
+	margin:10px auto 30px auto;
+}
+
+.contact form {
+	width:510px;
+	height:40px;
+	margin:0 auto;
+}
+
+.input-email {
+	width:410px;
+	height:40px;
+	border:0;
+	font:20px "Microsoft YaHei", STHeiti, sans-serif;
+	padding:0 10px;
+	display:inline-block;
+	float:left;
+}
+
+.input-submit {
+	width:80px;
+	height:40px;
+	border:0;
+	background-color:#686166;
+	color:#e0dcdd;
+	float:right;
+	display:inline-block;
+	font:16px "Microsoft YaHei", STHeiti, sans-serif;
+}
+
+.input-submit:hover {
+	background-color:#e74f4d;
+}
+
+.contact ul {
+	width:210px;
+	height:30px;
+	margin:35px auto;
+}
+
+.contact ul li {
+	list-style-type:none;
+	float:left;
+	margin:0 12px;
+}
+
+.copyright {
+	width:1100px;
+	height:35px;
+	margin:0 auto;
+	color:#e0dcdd;
+	padding-top:20px;
+	font-size:12px;
+}
+
+.copyright-left {
+	float:left;
+}
+
+.back-to-top {
+	float:right;
+}
