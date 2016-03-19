@@ -4,6 +4,8 @@
 > 由百度创办的免费的前端技术学习实践、交流、分享平台" 
 
 ## 百度前端学院2016年春季班任务
+> 演示地址 [http://baffinlee.github.io/ife_2016_spring/](http://baffinlee.github.io/ife_2016_spring/)
+
 ### 任务七：实现常见的技术产品官网的页面架构及样式布局
 #### 任务介绍
 >任务目的
