@@ -1,9 +1,4 @@
-/**
- * Todo
- * 减少冗余代码
- * 兼容性测试
- */
-
+/* 清除默认设置 */
 html, body, ul, ol, li, p, h1, h2, h3, pre, button, input {
 	margin:0;
 	padding:0;
@@ -15,8 +10,25 @@ body {
 	font-family:"Microsoft YaHei", SimHei, STHeiti, sans-serif;
 }
 
+/* 预定字体 */
+/* 黑体 */
+.font-HT {
+	font-family:SimHei, STHeiti, sans-serif;
+}
+
+/* 微软雅黑 */
+.font-MSYH {
+	font-family:"Microsoft YaHei", SimHei, STHeiti, sans-serif;
+}
+
+/* 宋体 */
+.font-ST {
+	font-family:SimSun, STSong, serif;
+}
+
+/* 清除浮动 */
 .clearfix {
-	zoom:1;
+	zoom:1; /* IE */
 }
 
 .clearfix:before,
@@ -29,9 +41,16 @@ body {
 	clear:both;
 }
 
+/* 长度变化动画 */
+.width-change {
+	transition:width 1s;
+	-moz-transition:width 1s; /* firefox */
+	-webkit-transition:width 1s; /* Safari, Chrome */
+	-o-transition:width 1s; /* Opera */
+}
+
+/* 导航条 */
 .navbar {
-	top:0;
-	left:0;
 	height:56px;
 	width:100%;
 	
@@ -68,7 +87,7 @@ body {
 }
 
 .navbar-logo-text {
-	font:bold 21px/32px SimHei, STHeiti, sans-serif;
+	font:bold 21px/32px;
 	color:#393a3a;
 	display:inline-block;
 	float:right;
@@ -124,25 +143,27 @@ body {
 .navbar-login-text {
 	display:inline-block;
 	color:#e74f4d;
-	font:14px/56px "Microsoft YaHei", STHeiti, sans-serif;
+	font-size:14px;
+	line-height:56px;
 	float:right;
 	margin-right:17px;
 }
 
+/* 主体大图 */
 .mainfoucs-pic {
 	background:url(../images/main.png) no-repeat;
 	height:854px;
 	background-size:cover;
-	font-family:"Microsoft YaHei", STHeiti, sans-serif;
 }
 
+/* 大图遮罩 */
 .mainfoucs-mask {
 	width:100%;
 	height:854px;
 	position:absolute;
 	background-color:#020c1d;
 	opacity:0.3;
-	filter:alpha(opacity=30);
+	filter:alpha(opacity=30); /* IE */
 }
 
 .mainfoucs-text {
@@ -184,6 +205,7 @@ body {
 	background-color:#d8625b;
 }
 
+/* 品牌特点 */
 .featuretags {
 	width:1280px;
 	height:250px;
@@ -201,7 +223,7 @@ body {
 	float:left;
 	list-style-type:none;
 	text-align:center;
-	font:14px/20px SimHei, STHeiti, sans-serif;
+	font:14px/20px;
 }
 
 .featuretags-item img {
@@ -210,6 +232,7 @@ body {
 	height:42px;
 }
 
+/* 品牌特点竖线间隔 */
 .featuretags-separator {
 	position:relative;
 	width:2px;
@@ -219,6 +242,7 @@ body {
 	background-color:#767777;
 }
 
+/* 探索新世界 */
 .explore {
 	width:100%;
 	height:360px;
@@ -236,6 +260,7 @@ body {
 	margin:90px auto 45px auto;
 }
 
+/* 地图 */
 .explore-map {
 	width:100%;
 	height:340px;
@@ -244,16 +269,16 @@ body {
 	background-size:cover;
 	text-align:center;
 	color:white;
-	font-family:"Microsoft YaHei", STHeiti, sans-serif;
 }
 
+/* 遮罩 */
 .map-mask {
 	position:absolute;
 	top:1520px;
 	width:100%;
 	height:390px;
 	opacity:0.2;
-	filter:alpha(opacity=20);
+	filter:alpha(opacity=20); /* IE */
 	background-color:#aa3433;
 	z-index:0;
 }
@@ -272,6 +297,7 @@ body {
 	font-weight:normal;
 }
 
+/* 横线间隔 */
 .text-separator {
 	width:30px;
 	height:2px;
@@ -279,12 +305,9 @@ body {
 	position:relative;
 	top:-14px;
 	margin:0 auto;
-	transition:width 1s;
-	-moz-transition:width 1s;
-	-webkit-transition:width 1s;
-	-o-transition:width 1s;
 }
 
+/* 选择地区 */
 .explore-map-address {
 	width:1280px;
 	margin:55px auto 0 auto;
@@ -308,6 +331,7 @@ body {
 	border-width:1px 1px 0 1px;
 }
 
+/* 地区列表 */
 .explore-map-address ul {
 	display:none;
 	position:absolute;
@@ -346,6 +370,7 @@ body {
 	color:white;
 }
 
+/* 悬浮或者取得焦点时显示列表 */
 .country-input:hover + .country-ul,
 .province-input:hover + .province-ul,
 .city-input:hover + .city-ul,
@@ -380,6 +405,7 @@ body {
 	background-color:#f7f7f7;
 }
 
+/* 各地活动 */
 .explore-activity ul {
 	width:1020px;
 	height:390px;
@@ -408,11 +434,11 @@ body {
 }
 
 .act-text-style-1 h2 {
-	font:15px "Microsoft YaHei", STHeiti, sans-serif;
+	font-size:15px;
 }
 
-.act-text-style-1 span {
-	font:12px "Microsoft YaHei", STHeiti, sans-serif;
+.act-text-style-1 h3 {
+	font-size:12px;
 }
 
 .act-text-style-2 {
@@ -420,13 +446,22 @@ body {
 }
 
 .act-text-style-2 h2 pre {
-	font:22px "Microsoft YaHei", STHeiti, sans-serif;
+	font-size:22px;
 }
 
-.act-text-style-2 span {
-	font:12px "Microsoft YaHei", STHeiti, sans-serif;
+.act-text-style-2 h3 {
+	font-size:12px;
 }
 
+.act-text-style-1 h2,
+.act-text-style-1 h3,
+.act-text-style-2 h2 pre,
+.act-text-style-2 h3 {
+	font-family:"Microsoft YaHei", STHeiti, sans-serif;
+	font-weight:normal;
+}
+
+/* 团队 */
 .team {
 	width:100%;
 	height:567px;
@@ -479,7 +514,7 @@ body {
 	height:32px;
 	border:1px solid #e74f4d;
 	color:#e74f4d;
-	font:14px "Microsoft YaHei", STHeiti, sans-serif;
+	font-size:14px;
 	background-color:white;
 }
 
@@ -501,15 +536,7 @@ body {
 	height:100%;
 }
 
-.actived-li,
-.unactived-li:hover {
-	background:url('../images/radius_solid.png') no-repeat center;
-}
-
-.unactived-li {
-	background:url('../images/radius_dashed.png')  no-repeat center;
-}
-
+/* 团队生活 */
 .team-life-left,
 .team-life-right,
 .team-life-center {
@@ -533,15 +560,15 @@ body {
 	margin-top:190px;
 }
 
-.team-life-left div {
+.team-life-left div,
+.team-life-center div {
 	width:30px;
 	height:2px;
 	margin:20px auto;
+}
+
+.team-life-left div {
 	background-color:white;
-	transition:width 1s;
-	-moz-transition:width 1s;
-	-webkit-transition:width 1s;
-	-o-transition:width 1s;
 }
 
 .team-life-left button {
@@ -551,7 +578,7 @@ body {
 	color:white;
 	background-color:#e74f4d;
 	border:1px solid white;
-	font:16px SimHei, STHeiTi, sans-serif;
+	font-size:16px;
 }
 
 .team-life-left button:hover {
@@ -573,14 +600,7 @@ body {
 }
 
 .team-life-center div {
-	width:30px;
-	height:2px;
-	margin:20px auto;
 	background-color:black;
-	transition:width 1s;
-	-moz-transition:width 1s;
-	-webkit-transition:width 1s;
-	-o-transition:width 1s;
 }
 
 .team-life-center button {
@@ -590,7 +610,7 @@ body {
 	color:#e74f4d;
 	background-color:white;
 	border:1px solid #e74f4d;
-	font:16px SimHei, STHeiTi, sans-serif;
+	font-size:16px;
 }
 
 .team-life-center button:hover {
@@ -603,6 +623,7 @@ body {
 	height:100%;
 }
 
+/* 三角箭头 */
 .right-arrow {
 	width:33.33%;
 	height:520px;
@@ -610,13 +631,14 @@ body {
 	background:url('../images/right_arrow.png') no-repeat center left;
 }
 
+/* 遮罩 */
 .team-life-right-mask {
 	width:33.33%;
 	height:520px;
 	position:absolute;
 	background-color:black;
 	opacity:0.2;
-	filter:alpha(opacity=20);
+	filter:alpha(opacity=20); /* IE */
 }
 
 
@@ -625,6 +647,17 @@ body {
 	width:150px;
 }
 
+/* 小圆点 */
+.actived-li,
+.unactived-li:hover {
+	background:url('../images/radius_solid.png') no-repeat center;
+}
+
+.unactived-li {
+	background:url('../images/radius_dashed.png')  no-repeat center;
+}
+
+/* 志愿者 */
 .volunteer div {
 	display:inline-block;
 	float:left;
@@ -664,7 +697,8 @@ body {
 	margin-bottom:20px;
 }
 
-.left p {
+.left p,
+.left a span {
 	font:12px/20px SimSun, STSong, serif;
 }
 
@@ -675,6 +709,7 @@ body {
 	margin-bottom:10px;
 }
 
+/* 志愿者表单 */
 .volunteer form input {
 	width:23.33%;
 	height:35px;
@@ -690,7 +725,7 @@ body {
 	padding:0 2%;
 	margin:10px 2%;
 	border:0;
-	font:14px "Microsoft YaHei", STHeiti, sans-serif;
+	font-size:14px;
 	overflow:hidden;
 }
 
@@ -706,7 +741,7 @@ body {
 	border:0;
 	margin:0 2%;
 	background-color:white;
-	font:15px SimHei, STHeiti, sans-serif;
+	font-size:15px;
 }
 
 .volunteer form button:hover {
@@ -714,6 +749,7 @@ body {
 	color:white;
 }
 
+/* 底部 */
 .footer {
 	width:100%;
 	height:415px;
@@ -728,12 +764,12 @@ body {
 }
 
 .contact h1 {
-	font:21px SimHei, STHeiti, sans-serif;
+	font-size:21px;
 	padding-top:90px;
 }
 
 .contact p {
-	font:14px/20px SimSun, STSong, serif;
+	font:14px/20px;
 	margin:10px auto 30px auto;
 }
 
@@ -747,7 +783,7 @@ body {
 	width:410px;
 	height:40px;
 	border:0;
-	font:20px "Microsoft YaHei", STHeiti, sans-serif;
+	font-size:20px;
 	padding:0 10px;
 	display:inline-block;
 	float:left;
@@ -761,7 +797,7 @@ body {
 	color:#e0dcdd;
 	float:right;
 	display:inline-block;
-	font:16px "Microsoft YaHei", STHeiti, sans-serif;
+	font-size:16px;
 }
 
 .input-submit:hover {
