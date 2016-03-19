@@ -156,8 +156,7 @@ body {
 }
 
 @media (min-width:900px) {
-	.li-normal,
-	.li-last {
+	.li-normal {
 		width:32%;
 		height:300px;
 		margin:0 10px;
@@ -167,24 +166,13 @@ body {
 }
 
 @media (max-width:900px) {
-	.li-normal,
-	.li-last {
+	.li-normal {
 		width:45.5%;
 		height:300px;
 		margin:0 10px;
 		float:left;
 		list-style-type:none;
 	}
-}
-
-.li-last {
-	border:5px dashed #cccccc;
-	color:#cccccc;
-	font-size:30px;
-	font-weight:bold;
-	text-align:center;
-	height:170px;
-	padding-top:120px;
 }
 
 .li-normal {
