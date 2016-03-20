@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* 清除预定设置 */
+html, body,h1, h2, h3, p, ul, ol, li, input, iframe {
+	margin:0;
+	padding:0;
+}
+
+body {
+	width:1000px;
+	height:1150px;
+	font-family:SimHei, STHeiti, "Microsoft YaHei", sans-serif;
+	background-color:#ededec;
+}
+
+
+/* 预定字体 */
+/* 黑体 */
+.font-HT {
+	font-family:SimHei, STHeiti, sans-serif;
+}
+
+/* 微软雅黑 */
+.font-MSYH {
+	font-family:"Microsoft YaHei", SimHei, STHeiti, sans-serif;
+}
+
+/* 宋体 */
+.font-ST {
+	font-family:SimSun, STSong, serif;
+}
+
+.container {
+	width:890px;
+	height:100%;
+	margin:25px auto 0 auto;
+}
+
+.search,
+.history,
+.statistics {
+	background-color:white;
+	width:100%;
+}
+
+.search {
+	height:85px;
+}
+
+.history {
+	height:65px;
+	margin:5px 0 20px 0;
+}
+
+.statistics {
+	height:90px;
+}
+
+.project {
+	height:355px;
+	margin:20px 0 10px 0;
+}
+
+.project-left,
+.project-right,
+.calendar,
+.brand-list {
+	display:inline-block;
+	float:left;
+	background-color:white;
+	height:100%;
+}
+
+.project-left {
+	width:530px;
+	margin-right:10px;
+}
+
+.project-right {
+	width:350px;
+}
+
+.last {
+	height:360px;
+}
+
+.calendar {
+	width:350px;
+	margin-right:10px;
+}
+
+.brand-list {
+	width:530px;
+}
+
+
+
