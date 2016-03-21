@@ -190,13 +190,19 @@ li:hover > span {
 }
 
 /* 三级导航 */
-.level-3 > li {
+
+.level-3 > a {
+	text-decoration:none;
+	color:#6e8096;
+}
+
+.level-3 > a > li {
 	background:url('../images/file.png') no-repeat 3px center;
 	padding:0 20px;
 }
 
-.level-3 > li[class*='open'],
-.level-3 > li:hover {
+.level-3 > a > li[class*='open'],
+.level-3 > a > li:hover {
 	background:url('../images/file_open.png') no-repeat 3px center;
 }
 
@@ -214,16 +220,24 @@ li:hover > span {
 	background-color:white;
 }
 
+.main-nav a {
+	font-size:13px;
+	line-height:30px;
+	text-decoration:none;
+	color:#b0b0b0;
+}
+
+.main-nav a[class='first-nav'] {
+	margin-left:30px;
+}
+
+.main-nav a[class='last-nav'] {
+	color:#75a0c6;
+}
+
 /* 页面iframe */
 iframe {
 	border:0;
 	height:1180px;
 	width:100%;
 }
-
-
-
-
-
-
-
