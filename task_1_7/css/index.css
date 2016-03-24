@@ -89,7 +89,9 @@ body {
 }
 
 .navbar-logo-text {
-	font:bold 21px/32px;
+	font-size:21px;
+	line-height:32px;
+	font-weight:bold;
 	color:#393a3a;
 	display:inline-block;
 	float:right;
