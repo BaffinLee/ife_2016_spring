@@ -66,20 +66,14 @@ body {
 
 .navbar-brand {
 	width:105px;
-	height:100%;
 	float:left;
 	margin-left:55px;
+	margin-top:12px;
 	display:inline-block;
 }
 
 .navbar-brand a {
 	text-decoration:none;
-}
-
-.floater {
-	float:left;
-    height:50%;
-    margin-bottom:-16px;
 }
 
 .navbar-logo {
@@ -90,7 +84,7 @@ body {
 
 .navbar-logo-text {
 	font-size:21px;
-	line-height:32px;
+	line-height:36px;
 	font-weight:bold;
 	color:#393a3a;
 	display:inline-block;
@@ -227,7 +221,8 @@ body {
 	float:left;
 	list-style-type:none;
 	text-align:center;
-	font:14px/20px;
+	font-size:16px;
+	line-height:24px;
 }
 
 .featuretags-item img {
@@ -236,14 +231,15 @@ body {
 	height:42px;
 }
 
-/* 品牌特点竖线间隔 */
-.featuretags-separator {
-	position:relative;
-	width:2px;
-	height:52px;
-	top:-35px;
-	left:320px;
-	background-color:#767777;
+.featuretags-item div {
+	width:318px;
+	height:60px;
+	border-left:2px solid #767777;
+}
+
+.featuretags-item div[class='first'] {
+	width:320px;
+	border:0;
 }
 
 /* 探索新世界 */
