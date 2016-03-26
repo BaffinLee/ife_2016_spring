@@ -17,7 +17,7 @@
 ### 任务八：响应式网格（栅格化）布局
 演示地址 [http://baffinlee.github.io/ife_2016_spring/task_1_8](http://baffinlee.github.io/ife_2016_spring/task_1_8)
 
-### 任务九：响应式网格（栅格化）布局
+### 任务九：使用HTML/CSS实现一个复杂页面
 演示地址 [http://baffinlee.github.io/ife_2016_spring/task_1_9](http://baffinlee.github.io/ife_2016_spring/task_1_9)
 
 ### 任务十一：移动Web页面布局实践
