@@ -17,6 +17,11 @@ a {
 	border:0;
 }
 
+/*fix IE a img border bug*/
+a img {
+	border:0;
+}
+
 li {
 	list-style:none;
 	float:left;
