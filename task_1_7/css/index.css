@@ -78,7 +78,11 @@ li {
 .navbar {
 	height:56px;
 	width:100%;
-	
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:white;
+	z-index:999;
 }
 
 .navbar-brand {
@@ -146,6 +150,8 @@ li {
 	height:854px;
 	background-size:cover;
 	position:relative;
+	top:56px;
+	margin-bottom:56px;
 }
 
 /* 大图遮罩 */
@@ -325,6 +331,7 @@ li {
 	background:white url('../images/select-bg.png') no-repeat 95% 50%;
 	border:solid #be4e48;
 	border-width:1px 1px 0 1px;
+	cursor:pointer;
 }
 
 /* 地区列表 */
@@ -356,14 +363,9 @@ li {
 	color:white;
 }
 
-/* 悬浮或者取得焦点时显示列表 */
-.country-input:hover + .country-ul,
-.province-input:hover + .province-ul,
-.city-input:hover + .city-ul,
-.country-input:focus + .country-ul,
-.province-input:focus + .province-ul,
-.city-input:focus + .city-ul
- {
+/* 悬浮时显示列表 */
+.explore-map-address div:hover ul:hover,
+.explore-map-address input:hover + ul {
 	display:block;
 }
 
@@ -426,11 +428,17 @@ li {
 
 .act-text-style-1 h2 {
 	font-size:15px;
+	margin-top:10px;
 }
 
-.act-text-style-1 h3,
+.act-text-style-1 h3 {
+	font-size:12px;
+	margin-top:5px;
+}
+
 .act-text-style-2 h3 {
 	font-size:12px;
+	margin:5px auto;
 }
 
 .act-text-style-2 h2 {
@@ -523,7 +531,8 @@ li {
 }
 
 .team-desc p {
-	margin:30px 70px;
+	margin:30px auto;
+	width:56%;
 	text-align:left;
 	font-size:14px;
 	line-height:30px;
@@ -713,7 +722,7 @@ li {
 .left h2 {
 	font-size:14px;
 	font-weight:bold;
-	margin-bottom:20px;
+	margin-bottom:25px;
 }
 
 .left p,
@@ -725,7 +734,7 @@ li {
 	float:right;
 	text-decoration:none;
 	color:black;
-	margin-bottom:10px;
+	margin-bottom:15px;
 }
 
 /* 志愿者表单 */
@@ -742,7 +751,7 @@ li {
 .volunteer form textarea {
 	width:58.5%;
 	height:120px;
-	padding:0 2%;
+	padding:15px 2% 0 2%;
 	margin:10px 2%;
 	border:0;
 	font-size:14px;
