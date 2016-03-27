@@ -83,6 +83,7 @@ li {
 	left:0;
 	background-color:white;
 	z-index:999;
+	box-shadow:3px 3px 10px #eee;
 }
 
 .navbar-brand {
