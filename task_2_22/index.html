@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task-02-22</title>
+	<style>
+		* {
+			box-sizing:border-box;
+			margin:0;
+			padding:0;
+			text-align:center;
+		}
+		#binaryTree {
+			width:80%;
+			height:200px;
+			margin: 20px auto;
+		}
+		#binaryTree * {
+			width: calc(50% - 20px);
+			height: calc(100% - 20px);
+			margin:10px 10px;
+			float:left;
+			border:1px solid black;
+			background-color:white;
+		}
+		#binaryTree > div {
+			width:90%;
+			height:100%;
+		}
+	</style>
+</head>
+<body>
+	<select id="traversalType">
+		<option value="1" selected="selected">前序遍历</option>
+		<option value="2">中序遍历</option>
+		<option value="3">后序遍历</option>
+	</select>
+	<button id="traversalBtn">遍历二叉树</button>
+	<div id="binaryTree"></div>
+	<script src="index.js"></script>
+</body>
+</html>

@@ -3,11 +3,8 @@ var queue = {
 
 	content: [], // 队列内容
 
-	length: 0, // 队列长度
-
 	// 队列初始化
 	init: function (arr = []) {
-		this.length = arr.length;
 		this.content = arr;
 		this.render();
 		return this;
@@ -16,14 +13,12 @@ var queue = {
 	// 右侧进入
 	push: function (num) {
 		this.content.push(num);
-		this.length += 1;
 		this.render();
 	},
 
 	// 左侧进入
 	unshift: function (num) {
 		this.content.unshift(num);
-		this.length += 1;
 		this.render();
 	},
 
@@ -34,7 +29,6 @@ var queue = {
 			return false;
 		}
 		var popValue = this.content.pop();
-		this.length -= 1;
 		this.render();
 		return popValue;
 	},
@@ -46,7 +40,6 @@ var queue = {
 			return false;
 		}
 		var shiftValue = this.content.shift();
-		this.length -= 1;
 		this.render();
 		return shiftValue;
 	},
@@ -58,7 +51,6 @@ var queue = {
 			return false;
 		}
 		this.content.splice(position, amount);
-		this.length -= 1;
 		this.render();
 	},
 
