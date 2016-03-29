@@ -214,7 +214,7 @@ function initAqiChartData() {
 
         // 月数据
         var monthNow = ""; //当前月份
-        preData = 0; // 月份总数缓存
+        preData = 0; // 月份总天数缓存
         i = 1; // 月份天数计数器
         var j = 0; // 遍历次数计数器
         // 遍历当前城市数据
@@ -225,7 +225,7 @@ function initAqiChartData() {
                 monthNow = date.substr(0, 7);
             }
 
-            // 如果到了下月份，提交数据到chartData，清空preData和计数器i，更新monthNow
+            // 如果到了下月份，保存数据到chartData，清空preData和计数器i，更新monthNow
             if (monthNow != date.substr(0, 7)) {
                 chartData[nowCity]["month"][monthNow] = preData / i; // 上个月数据
                 preData = 0;
