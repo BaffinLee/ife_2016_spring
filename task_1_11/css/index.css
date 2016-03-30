@@ -55,6 +55,7 @@ header {
 	font-weight: normal;
 	line-height: 46px;
 	color: white;
+	z-index: 99;
 }
 
 header a {
@@ -244,7 +245,7 @@ nav li.on {
 }
 
 .art-pic img {
-	width: 29%;
+	width: 32%;
 	margin-left: 2%;
 }
 
