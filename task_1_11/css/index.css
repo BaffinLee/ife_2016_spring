@@ -36,6 +36,8 @@ html {
 
 body > * {
 	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 /* 清除浮动 */
@@ -45,12 +47,22 @@ body > * {
 	clear: both;
 }
 
+.container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
 /* 顶部 */
 header {
+	width: 100%;
+	max-width: 800px;
 	height: 46px;
 	position: fixed;
 	top:0;
 	left:0;
+	right: 0;
+	margin: 0 auto;
 	background-color: #91d4da;
 	font-weight: normal;
 	line-height: 46px;
@@ -135,7 +147,8 @@ nav li.on {
 /* 分栏 */
 .column {
 	width:100%;
-	margin: 10px 0;
+	max-width: 800px;
+	margin: 10px auto;
 }
 
 .column li.border-right {
@@ -190,7 +203,7 @@ nav li.on {
 .mod-main > div {
 	width: 33%;
 	height: 18%;
-	padding: 3% 0;
+	padding: 3.33% 0;
 	margin: 0 0 4% 4%;
 	font-size: 1.4rem;
 	text-align: center;
