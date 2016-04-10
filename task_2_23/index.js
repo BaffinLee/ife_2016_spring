@@ -5,6 +5,7 @@ function frontTraversal (e, tree) {
 
 	// 坑 chrome会给button元素绑定的函数传入一个MouseEvent的参数，这个参数是第一个参数
 	// 等下再来研究下这个参数，这里就先这样解决吧
+	// 更新：只要是事件触发的函数，第一个参数都是event对象，具体分为很多种event，对象绑定由浏览器自动完成
 	// console.log(e);
 	
 	tree = tree || document.getElementById('super');
