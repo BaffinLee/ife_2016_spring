@@ -1,5 +1,7 @@
 //创建二叉树节点
-function createBinaryTreeNode (parent = null, data = "") {
+function createBinaryTreeNode (parent, data) {
+	parent = parent || null;
+	data = data || "";
 	var node = {};
 	node.data = data;
 	node.parent = parent;
@@ -50,7 +52,9 @@ binaryTree =
 }
 也是前序遍历
 */
-function createBinaryTree (deep = 5, parent = null) {
+function createBinaryTree (deep, parent) {
+	deep = deep || 5;
+	parent = parent || null;
 	var node = createBinaryTreeNode(parent, deep);
 	deep-=1;
 	if (deep == 0) {
@@ -62,7 +66,10 @@ function createBinaryTree (deep = 5, parent = null) {
 }
 
 // 渲染二叉树, 其实也是一个前序遍历
-function render (binaryTree = createBinaryTree(), container = document.getElementById("binaryTree")) {
+function render (binaryTree, container) {
+
+	binaryTree = binaryTree || createBinaryTree();
+	container = container || document.getElementById("binaryTree");
 
 	var div = document.createElement("div");
 	if (binaryTree.leftChild !== null) {
@@ -100,7 +107,10 @@ function traversalBinaryTree () {
 
 // 遍历函数 (遍历的是HTML元素，不是二叉树对象)
 // 前序遍历
-function frontTraversal (tree = document.getElementById("binaryTree").childNodes[0]) {
+function frontTraversal (tree) {
+
+	tree = tree || document.getElementById("binaryTree").childNodes[0];
+
 	// 不是Element类型,或者到了tree外层div，就退出
 	if (tree.nodeType != 1 || tree == document.getElementById("binaryTree")) {
 		return;
@@ -143,12 +153,12 @@ function frontTraversal (tree = document.getElementById("binaryTree").childNodes
 }
 
 // 中序遍历
-function midTraversal (tree = document.getElementById("binaryTree").childNodes[0]) {
+function midTraversal (tree) {
 	alert("Todo");
 }
 
 // 后序遍历
-function lastTraversal (tree = document.getElementById("binaryTree").childNodes[0]){
+function lastTraversal (tree){
 	alert("Todo");
 }
 
