@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f2f2f2;
+}
+
+.menu {
+	width: 700px;
+	margin: 30px auto;
+	background-color: white;
+	padding: 50px;
+}
+
+.btn {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.btn input {
+	margin-left: 50px;
+}
+
+ul {
+	margin-left: 35px;
+	position: relative;
+}
+
+ul:before,
+ul:after,
+li > ul:before {
+	content: "";
+	width: 10px;
+	height: 15px;
+	position: absolute;
+	background-color: transparent;
+}
+
+ul:before {
+	left: 0;
+	background-color: transparent;
+	border-left: 1px solid white;
+	z-index: 100;
+}
+
+ul:after {
+	bottom: 0;
+}
+
+li {
+	border-left: 1px solid black;
+	list-style-type: none;
+	line-height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+li > ul:before {
+	border-left: 1px solid black;
+	top: -5px;
+	left: 0;
+}
+
+li > span {
+	display: inline-block;
+	width: 50px;
+}
+
+li.find > span {
+	color: red;
+}
+
+li:before,
+li.tree > span:before {
+	content: "---";
+	height: 30px;
+	display: inline-block;
+}
+
+li.tree > span:before {
+	content: url('../images/plus_square.png');
+	vertical-align: middle;
+	margin-left: -10px;
+}
+
+li.on > span:before {
+	content: url('../images/minus_square.png');
+}
+
+li:last-child {
+	border: 0;
+}
+
+li:last-child:after {
+	content: "";
+	position: absolute;
+	height: 15px;
+	border-left: 1px solid black;
+	top: 0;
+	left: 0;
+}
+
+li.tree > ul {
+	display: none;
+}
+
+li.on > ul {
+	display: block;
+}

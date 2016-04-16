@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task-02-25</title>
+	<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+	<div class="menu">
+		<div class="btn">
+			<button id="deleteBtn">删除选中</button>
+			<input type="text" name="add" id="add">
+			<button id="addBtn">插入选中内部</button><input type="text" name="search" id="search">
+			<button id="searchBtn">搜索</button>
+		</div>
+		<ul id="tree">
+			<li class="tree on">
+				<span>1</span>
+				<ul>
+					<li>
+						<span>2</span>
+					</li>
+					<li class="tree on">
+						<span>3</span>
+						<ul>
+							<li>
+								<span>4</span>
+							</li>
+							<li>
+								<span>5</span>
+							</li>
+						</ul>
+					</li>
+					<li class="tree on">
+						<span>34</span>
+						<ul>
+							<li>
+								<span>6</span>
+							</li>
+							<li>
+								<span>7</span>
+							</li>
+							<li>
+								<span>8</span>
+							</li>
+						</ul>
+					</li>
+					<li class="tree">
+						<span>9</span>
+						<ul>
+							<li>
+								<span>54</span>
+							</li>
+							<li>
+								<span>54</span>
+							</li>
+							<li>
+								<span>54</span>
+							</li>
+							<li>
+								<span>54</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<span>10</span>
+			</li>
+			<li>
+				<span>11</span>
+			</li>
+		</ul>
+	</div>
+	<script src="scripts/index.js"></script>
+</body>
+</html>
