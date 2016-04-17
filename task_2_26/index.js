@@ -31,9 +31,9 @@ var commander = {
 			// 读取button的class作为命令
 			mediator.command = e.target.getAttribute('class');
 
-			// 读取button外层div的class为飞船id
+			// 读取button外层div的id为飞船id
 			if (mediator.command != 'add') {
-				mediator.id = e.target.parentNode.getAttribute('class').split('-')[1];
+				mediator.id = e.target.parentNode.getAttribute('id').split('-')[1];
 			}
 
 			// 发送命令
